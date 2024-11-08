@@ -1,0 +1,84 @@
+.parent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightblue;
+}
+.child2{
+    display: flex;
+    gap: 30px;
+}
+@media screen and (max-width:400px) {
+    .parent{
+        display: flex;
+        position: relative;
+    }
+    .input-checked{
+        display: none;
+    }
+    .child2{
+        display:none;
+        position: absolute;
+        justify-items: center;
+        gap: 5px;
+        top:60px;
+        left:0px;
+        width: 100%;
+        background-color: lightblue;
+
+    }
+    .input-checked:checked ~ .child2{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width:401px) and (max-width:768px) {
+    .parent{
+        display: flex;
+        position: relative;
+    }
+    .input-checked{
+        display: none;
+    }
+    .child2{
+        display:none;
+        position: absolute;
+        justify-items: center;
+        gap: 5px;
+        top:60px;
+        left:0px;
+        width: 100%;
+        background-color: lightblue;
+
+    }
+    .input-checked:checked ~ .child2{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1025px){ 
+    *{
+        font-size: 1.2rem;
+    }
+    .input-checked, .label1{
+        display: none;
+    }
+}
+@media screen and (min-width:1026px) and (max-width:1440px){ 
+    *{
+        font-size: 1.2rem;
+    }
+    .input-checked, .label1{
+        display: none;
+    }
+}
+@media screen and (min-width:1441px) and (max-width:2560px){ 
+    *{
+        font-size: 1.2rem;
+    }
+    .input-checked, .label1{
+        display: none;
+    }
+}
